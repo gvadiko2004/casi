@@ -1,0 +1,21 @@
+.user__action {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+
+  &-menu {
+    display: none;
+  }
+
+  &-btn {
+    @include btnAll;
+
+    &:nth-child(1) {
+      @include btn-1;
+    }
+
+    &:nth-child(2) {
+      @include btn-2;
+    }
+  }
+}

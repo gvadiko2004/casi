@@ -1,0 +1,64 @@
+.header {
+  margin-top: 80px;
+
+  &-logo {
+    @include mainLogo;
+  }
+
+  &__top {
+    background-color: var(--black-1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px var(--p-18);
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+  }
+
+  &__bottom {
+    background-color: var(--blue-01);
+    overflow: hidden;
+
+    &-close {
+      position: absolute;
+      right: 32px;
+      top: 32px;
+      z-index: 100;
+
+      display: none;
+
+      i {
+        font-size: 42px;
+        color: #fff;
+      }
+    }
+
+    &-list {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &-link {
+      display: block;
+      padding: 12px 22px;
+      color: #fff;
+      transition: 0.1s;
+      text-transform: var(--uppercase);
+      font-weight: 400;
+      font-size: 14px;
+
+      &.active {
+        background-color: var(--color-7);
+        color: var(--color-1);
+      }
+
+      &:hover {
+        background-color: var(--color-7);
+        color: var(--color-1);
+      }
+    }
+  }
+}
